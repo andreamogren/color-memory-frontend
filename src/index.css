@@ -1,0 +1,113 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  margin: 0;
+}
+
+.restart-button {
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.87);
+  border: 1px solid rgba(255, 255, 255, 0.87);
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #242424;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.restart-button:hover {
+  border-color: #646cff;
+}
+.restart-button:focus,
+.restart-button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.memory-container {
+  background-color: #141414;
+  border-radius: 6px;
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 900px;
+  padding: 1rem;
+}
+
+.card-container--disabled {
+  cursor: not-allowed;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  font-size: 5rem;
+  padding: 0;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.87);
+  background-image: url('./assets/decerno_logo.png');
+}
+
+.card__content {
+   visibility: hidden;
+}
+
+.card--disabled {
+  cursor: not-allowed;
+}
+
+.card--flipped {
+  background-image: none;
+}
+
+.card__content--flipped {
+  visibility: visible;
+}
+
+.card--hasBeenMatched {
+  visibility: hidden;
+}

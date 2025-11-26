@@ -1,0 +1,22 @@
+Frontend
+- Create a boilerplate react project X
+- Make a grid with cards X
+- Use Decerno logo as back of card X
+- Display emoji as memory card motive X
+- Flip card on click X
+- Show cards and then either turn them back or remove them X
+- Create hooks for endpoints X
+- Call POST endpoint to check match X
+- Call GET endpoint after each matching pair X
+- Show counted points X
+- Show game over and total score X
+- Restart button, call POST endpoint X
+- Connect backend to frontend X
+- Readme X
+- Refactor, make improvements X
+
+If there is time
+- Confetti 🎉
+- Animation
+
+
